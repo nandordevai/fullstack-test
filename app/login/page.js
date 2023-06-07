@@ -6,13 +6,19 @@ export default function Login() {
         <main className={styles.login}>
             <Image src="/badge-colored.svg" width={75} height={48} alt="Logo"></Image>
             <h1 className={styles.loginTitle}>Bejelentkezés</h1>
-            <form class={styles.loginForm}>
-                <label for="email">E-mail cím:</label>
-                <input type="text" name="email" id="email"></input>
-                <label for="password">Jelszó:</label>
-                <input type="text" name="password" id="password"></input>
-                <input type="checkbox" name="savesession" id="savesession"></input>
-                <label for="savesession">Emlékezzen rám</label>
+            <form className={styles.loginForm}>
+                <div className={styles.loginForm__row}>
+                    <label htmlFor="email">E-mail cím:</label>
+                    <input type="text" name="email" id="email"></input>
+                </div>
+                <div className={styles.loginForm__row}>
+                    <label htmlFor="password">Jelszó:</label>
+                    <input type="password" name="password" id="password"></input>
+                </div>
+                <div className={`${styles.loginForm__row} ${styles['loginForm__row--inline']}`}>
+                    <input type="checkbox" name="savesession" id="savesession"></input>
+                    <label htmlFor="savesession">Emlékezzen rám</label>
+                </div>
                 <input type="submit" value="Bejelentkezés"></input>
             </form>
         </main>
