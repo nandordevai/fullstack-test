@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
+import form from '../form.module.scss'
 
 export default function Login() {
     return (
@@ -8,11 +9,11 @@ export default function Login() {
             <h1 className={styles.loginTitle}>Bejelentkezés</h1>
             <form className={styles.loginForm}>
                 <div className={styles.loginForm__row}>
-                    <label htmlFor="email">E-mail cím:</label>
+                    <label className={form.fieldLabel} htmlFor="email">E-mail cím:</label>
                     <input type="text" name="email" id="email"></input>
                 </div>
                 <div className={styles.loginForm__row}>
-                    <label htmlFor="password">Jelszó:</label>
+                    <label className={form.fieldLabel} htmlFor="password">Jelszó:</label>
                     <input type="password" name="password" id="password"></input>
                 </div>
                 <div className={`${styles.loginForm__row} ${styles['loginForm__row--inline']}`}>

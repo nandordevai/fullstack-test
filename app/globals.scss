@@ -1,7 +1,9 @@
 :root {
+    --color-accent: hsla(219, 72%, 25%, 1);
     --color-border-light: hsla(0, 0%, 87%, 1);
     --color-button-active: hsla(192, 87%, 43%, 1);
     --color-light-default: hsla(0, 0%, 100%, 1);
+    --color-dark: hsla(0, 0%, 13%, 1);
 
     --font-size-s: .875rem;
     --font-size-m: 1rem;
@@ -26,6 +28,7 @@ html {
 }
 
 body {
+    color: var(--color-dark);
 }
 
 input[type=text],
