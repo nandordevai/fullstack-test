@@ -7,7 +7,7 @@ export default function Login() {
         <main className={styles.login}>
             <Image src="/badge-colored.svg" width={75} height={48} alt="Logo"></Image>
             <h1 className={styles.loginTitle}>Bejelentkezés</h1>
-            <form className={styles.loginForm}>
+            <form action="/api/login" method="POST" className={styles.loginForm}>
                 <div className={styles.loginForm__row}>
                     <label className={form.fieldLabel} htmlFor="email">E-mail cím:</label>
                     <input type="text" name="email" id="email"></input>
